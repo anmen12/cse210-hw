@@ -4,6 +4,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        DisplayWelcome();
+
+        DisplayResult(PromptUserName(), SquareNumber(PromptUserNumber()));
+    }
+
+    static void DisplayWelcome()
+    {
+        Console.WriteLine("Welcom to the Program!");
+    }
+
+    static string PromptUserName()
+    {
+        Console.Write("Please enter your name: ");
+        return Console.ReadLine();
+    }
+
+    static int PromptUserNumber()
+    {
+        Console.Write("Please enter your favorite number: ");
+        return int.Parse(Console.ReadLine());
+    }
+
+    static int SquareNumber(int number)
+    {
+        return number *  number;
+    }
+
+    static void DisplayResult(string name, int squared_number)
+    {
+        Console.WriteLine($"{name}, the square of your number is {squared_number }");
     }
 }
