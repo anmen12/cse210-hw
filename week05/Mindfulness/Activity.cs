@@ -40,8 +40,4 @@ class Activity
         }
         Console.WriteLine($" \b");
     }
-    public void ShowCountDown(int seconds)
-    {
-        ;
-    }
 }
